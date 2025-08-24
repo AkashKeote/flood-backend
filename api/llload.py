@@ -52,8 +52,13 @@ except Exception:
 # ----------------------------
 # Config
 # ----------------------------
-GRAPHML = "roads_all.graphml"
-CSV = "mumbai_ward_area_floodrisk.csv"
+GRAPHML = "roads_all.graphml"  # Current path
+CSV = "mumbai_ward_area_floodrisk.csv"  # Current path
+
+# Change to absolute paths if needed:
+# GRAPHML = "/app/api/roads_all.graphml"
+# CSV = "/app/api/mumbai_ward_area_floodrisk.csv"
+
 OUT_HTML = "mumbai_evacuation_routes.html"
 PLACE = "Mumbai, India"
 ASSUMED_SPEED_KMPH = 25.0       # for ETA
