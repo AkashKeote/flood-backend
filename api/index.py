@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 import tempfile
 import os
 import gc  # For memory cleanup
-from .llload import get_k_nearest_low_risk_routes, build_and_save_map, flood_df, G
+from llload import get_k_nearest_low_risk_routes, build_and_save_map, flood_df, G
 
 app = Flask(__name__)
 
