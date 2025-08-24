@@ -1,0 +1,10 @@
+flask==3.0.0
+osmnx==1.9.2
+networkx==3.2.1
+pandas==2.1.4
+numpy==1.24.4
+geopandas==0.14.1
+folium==0.15.1
+shapely==2.0.2
+rapidfuzz==3.6.1
+gunicorn==21.2.0
