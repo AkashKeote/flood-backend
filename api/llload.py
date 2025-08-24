@@ -62,9 +62,13 @@ CSV = "mumbai_ward_area_floodrisk.csv"  # Current path
 OUT_HTML = "mumbai_evacuation_routes.html"
 PLACE = "Mumbai, India"
 ASSUMED_SPEED_KMPH = 25.0       # for ETA
-SAMPLE_FACTOR = 5               # sample 1/N edges for lighter HTML
-MAX_POIS_PER_CAT = 500          # cap per category to keep HTML smaller
-ROUTE_COUNT = 5                 # how many evacuation routes to draw
+
+# Memory optimization settings
+SAMPLE_FACTOR = 15  # Increase from 5 to 15 (reduce data size)
+MAX_POIS_PER_CAT = 100  # Reduce from 500 to 100 (less POIs)
+
+# Limit road network complexity
+MAX_GRAPH_NODES = 20000  # Add this limit
 
 # Risk color map
 RISK_COLOR = {
