@@ -52,16 +52,13 @@ except Exception:
 # ----------------------------
 # Config
 # ----------------------------
-import os
-# Get absolute paths relative to this file
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-GRAPHML = os.path.join(BASE_DIR, "roads_all.graphml")
-CSV = os.path.join(BASE_DIR, "mumbai_ward_area_floodrisk.csv")
-OUT_HTML = os.path.join(BASE_DIR, "mumbai_evacuation_routes.html")
+GRAPHML = "roads_all.graphml"
+CSV = "mumbai_ward_area_floodrisk.csv"
+OUT_HTML = "mumbai_evacuation_routes.html"
 PLACE = "Mumbai, India"
 ASSUMED_SPEED_KMPH = 25.0       # for ETA
-SAMPLE_FACTOR = 10              # sample 1/N edges for lighter HTML (increased for memory optimization)
-MAX_POIS_PER_CAT = 200          # cap per category to keep HTML smaller (reduced for memory optimization)
+SAMPLE_FACTOR = 5               # sample 1/N edges for lighter HTML
+MAX_POIS_PER_CAT = 500          # cap per category to keep HTML smaller
 ROUTE_COUNT = 5                 # how many evacuation routes to draw
 
 # Risk color map
